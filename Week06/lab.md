@@ -2,7 +2,8 @@
 Complete all the problems below. 100 Points total. Please submit homework to CSNS.
 
 - For FULL credit use proper ES6 syntax including using let/const properly.
-- For FULL credit upload only a single javascript file and output all answers to the console.
+- For FULL credit upload two javascript files and output all answers to the console.
+- The files should be called: file-read.js and http-request.js
 
 ---
 
