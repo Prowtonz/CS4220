@@ -3,7 +3,7 @@
 #### Using the API selected from HW Week 7 create a custom CLI and Custom Node Module to demonstrate your understanding of a Node.js CLI, APIs and Node Modules. Your CLI and Custom Node Module will allow a user to perform a search via the command line and then select a result from that search list to view detailed data.
 
 ---
-### CLI Requirements
+### CLI Requirements. (Week 7)
 Create a command line interface similar to the examples in class.
 
 **package.json** <br/>
@@ -24,7 +24,7 @@ The module should have a package.json file that is properly filled out.
 
 
 ---
-### Custom Module Requirements
+### Custom Module Requirements. (Week 8)
 
 **package.json** <br/>
 The module should have a package.json file that is properly filled out.
