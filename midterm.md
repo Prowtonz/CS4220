@@ -1,4 +1,4 @@
-## MIDTERM DUE 03/24 - 11:59PM - NO LATE SUBMISSIONS ACCEPTED
+## MIDTERM DUE Thursday 03/26 - 11:59PM - NO LATE SUBMISSIONS ACCEPTED
 
 #### Using the API selected from HW Week 7 create a custom CLI and Custom Node Module to demonstrate your understanding of a Node.js CLI, APIs and Node Modules. Your CLI and Custom Node Module will allow a user to perform a search via the command line and then select a result from that search list to view detailed data.
 
