@@ -143,6 +143,14 @@ Slack is an online collaboration hub that can replace email to help people work 
 
 <br/>
 
+**Week 11 - 04/06**
+ - Midterm Review and Demo
+ - Expanding API understanding and interactions
+ - Custom Node Module continued
+ - CLIs continued
+
+<br/>
+
 <hr/>
 
 ### HELPFUL STUDENT RESOURCES
