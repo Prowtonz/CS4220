@@ -12,6 +12,8 @@ const _print = (data) => {
     console.log('- - - - - - - - - - - - - - - - - - - - - - - - - - - - - ');
 };
 
+// custom "seearch" for departments
+// by taking the full departments reponse and the user term perform a filter returning only what the user search for
 const _filterDepartments = (departments, term) => {
     const searched = departments.filter((department) => {
         return department.displayName
@@ -22,6 +24,7 @@ const _filterDepartments = (departments, term) => {
     return searched;
 };
 
+// display the artwork names via list selection
 const _displayArtResults = (results) => {
     const displayArt = results.map((result) => {
         return {
@@ -40,6 +43,7 @@ const _displayArtResults = (results) => {
     ]);
 };
 
+// display the department names via list selection
 const _displayDepartments = (results) => {
     const displayDepts = results.map((result) => {
         return {
@@ -58,6 +62,7 @@ const _displayDepartments = (results) => {
     ]);
 };
 
+// dynamic user confirm (y/n) prompt for a question
 const _promptUser = (question) => {
     return inquirer.prompt([
         {
@@ -68,6 +73,7 @@ const _promptUser = (question) => {
     ]);
 };
 
+// dynamic user input prompt for a question
 const _userInput = (question) => {
     return inquirer.prompt([
         {
@@ -79,6 +85,7 @@ const _userInput = (question) => {
 };
 
 const searchArt = async (term, department = null) => {
+    // creating some constants but we could expand the CLI to accept these as arguments and make it dynamic
     const format = true;
     const limit = 20;
 
@@ -93,19 +100,19 @@ const searchDepartment = async (term = '') => {
     const filtered = _filterDepartments(response.departments, term);
     const choice = await _displayDepartments(filtered);
 
-    console.log(choice);
+    return choice;
 };
 
 const advanceSearch = async () => {
-    // prompt the user to search by department by filling _promptUser()
+    // LAB TIME (NOT GRADED)
+
+    // prompt the user to search by department by filling _promptUser('some question')
 
     // if the user answers true
-    // prompt the user for a department term by using _userInput()
-    // now the the search term call searchDepartment(term)
-
-    // now prompt the user for an artwork term by using _userInput()
-
-    // mow that you have both a department id and an artwork term
+    // prompt the user for a department search term by using _userInput('some question')
+    // now with that search term call searchDepartment(term)
+    // now prompt the user for an artwork term by using _userInput('some question')
+    // now that you have both a department id from (searchDepartment()) an artwork term
     // now call searchArt(term, department)
 
     // else
