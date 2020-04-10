@@ -151,6 +151,40 @@ Slack is an online collaboration hub that can replace email to help people work 
 
 <br/>
 
+**Week 12 - 04/13**
+ - Introduction to Node.js Server 
+ - Using Express.js to build a Server
+ - Intergrating with Mongo DB
+ 
+ <br/>
+
+**Week 13 - 04/20**
+ - Introduction to Vue.js
+ - Understanding Vue Methods and Data
+ - Creating a Vue App
+ 
+ <br/>
+
+**Week 14 - 04/27**
+ - Pairing Node.js with Vue.js
+ - Passing data from the Server Side to Client Side
+ - Introduction and Discussion on the Final Project 
+ 
+<br/>
+
+**Week 15 - 05/03**
+ - Contunation on pairing Node.js with Vue.js
+ - Contunation on discussion on the Final Project 
+ 
+<br/>
+
+**Week 16 - 05/10**
+ - CS4220 Final Q&A
+ 
+FINALS WEEK
+FINAL DUE - 05/11 at 12:59pm
+ 
+ 
 <hr/>
 
 ### HELPFUL STUDENT RESOURCES
