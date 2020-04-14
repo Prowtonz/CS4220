@@ -1,4 +1,4 @@
-## Extra Credit (Optional) DUE Friday 04/17 - 11:59PM  (10pts)
+## Extra Credit (Optional) DUE Sunday 04/19 - 11:59PM  (10pts)
 ## Extra Credit Grade will be ADDED to the Grade on Lab 2 (Week 06)
 
 ---
