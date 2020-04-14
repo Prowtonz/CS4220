@@ -154,7 +154,7 @@ Slack is an online collaboration hub that can replace email to help people work 
 **Week 12 - 04/13**
  - Introduction to Node.js Server 
  - Using Express.js to build a Server
- - Intergrating with Mongo DB
+ - Making Requests to the Server
  
  <br/>
 
