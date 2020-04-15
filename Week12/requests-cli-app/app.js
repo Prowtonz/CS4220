@@ -12,6 +12,7 @@ const get = async () => {
 
 const post = async (data) => {
     try {
+        console.log(data)
         const response = await superagent.post(`${url}/json`).send({ data });
         console.log(response.body);
     } catch (error) {
