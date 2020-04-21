@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>Grocery List App</title>
+        <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     </head>
     <body>
-        <section>
+        <section id='grocery-app'>
             <div class="container">
                 <header class="text-center">
-                    <h2>Grocery List Items</h2>
+                    <h2>Grocery Store Items</h2>
                 </header>
 
                 <div class="row">
                     <div class="col-md-12">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Item to purchase?"
+                            v-model="newItem"
+                            @keyup.enter="addItem"
+                        />
 
-                        <section>
-
+                        <section v-show="items.length">
+                            <ul class="list-group">
+                                <li v-for="item in items" class="list-group-item">
+                                    <input type="checkbox" v-model="item.isInCart" class="form-check-input" />
+                                    <label>{{ item.title }}</label>
+                                    <button
+                                        class="btn btn-sm btn-danger"
+                                        style="float: right"
+                                        @click=removeItem(item)
+                                    >
+                                    remove
+                                    </button>
+                                </li>
+                            </ul>
                         </section>
 
                         <section>
-
+                            <span>Still Shopping For: {{ stillShopping }} items</span>
                         </section>
                     </div>
                 </div>
@@ -26,7 +47,44 @@
         </section>
 
         <script>
+            const app = new Vue({
+                el: '#grocery-app',
+                data: {
+                    items: [],
+                    newItem: ""
+                },
 
+                computed: {
+                    stillShopping: function() {
+                        const shopping = this.items.filter(function (item) {
+                            return !item.isInCart
+                        });
+
+                        return shopping.length;
+                    }
+                },
+
+                methods: {
+                    addItem: function () {
+                        const value  = this.newItem.trim();
+
+                        if (!value) {
+                            return;
+                        }
+
+                        this.items.push({
+                            title: value,
+                            isInCart: false
+                        });
+
+                        this.newItem = '';
+                    },
+
+                    removeItem: function (item) {
+                        console.log(item)
+                    }
+                }
+            });
         </script>
     </body>
 </html>
