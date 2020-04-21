@@ -28,3 +28,5 @@ Requirements:
 
 - Use a Vue directive (v-if/v-bind/or any other one you prefer) combined with html and/or css to apply a strike through style to text.
 - When a user checks an item off the list.  The checkbox will appear checked and the name of the item will have a strike through effect.
+
+![Image of Lab Demo](https://raw.githubusercontent.com/cydneymikel/CS4220/master/Week13/screen_shot.png)
