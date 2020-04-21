@@ -1,5 +1,5 @@
 ## Week 13 Lab - Due Monday 04/27/20 at 11:59PM
-Complete all the problems below. 30 Points total. Please submit homework to CSNS.
+Complete all the problems below. 30 Points total. Please submit this lab to CSNS.
 
 - For FULL credit use proper ES6 and Vue.js syntax..
 - For FULL credit upload a single html file. The Vue.js JavaScript should be included in the script tag.
