@@ -86,7 +86,8 @@ Your Node.js server is responsible utilizing your Custom Node Module to communic
 
 *** Video & Timing**
   - Create a video that is 2 minutes or less to present on a portion of code.
-  - Present on a portion of code that you wrote and is unique to your application (do not spend time presenting on code covered in demos).
+  - Present on a portion of code that you wrote inside app.js for the Vue.js portion.
+  - Explain the code that is unique to your application. (do not spend time presenting on code covered in demos).
   - Present on the code in a clear manner where you explain what you've written
   - Run a demo of your application.
   - Going over time loses points.
