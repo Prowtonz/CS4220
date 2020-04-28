@@ -182,7 +182,7 @@ Slack is an online collaboration hub that can replace email to help people work 
  - CS4220 Final Q&A
  
 FINALS WEEK
-FINAL DUE - 05/11 at 12:59pm
+FINAL DUE - 05/12 at 11:59pm
  
  
 <hr/>
