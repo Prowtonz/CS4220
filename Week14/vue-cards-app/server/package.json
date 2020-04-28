@@ -1,0 +1,18 @@
+{
+  "name": "deck-of-cards-server",
+  "version": "1.0.0",
+  "description": "Server to Support Deck of Cards App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Cydney Auman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "deckofcards": "file:../../deckofcards",
+    "express": "^4.17.1"
+  }
+}
