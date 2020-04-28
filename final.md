@@ -68,7 +68,8 @@ Your Node.js server is responsible utilizing your Custom Node Module to communic
   - Perform the necessary steps to fetch the detail by ID on the selected item.
     - The details should be formatted cleanly, so that it is easily readable.
     - DO NOT display JSON structures.
-    - The details should include an image.  IF your API does not have images returned in results - then use a tasteful default image of your choice.
+    - The details should include an image.  
+    - IF your API does not have images returned in results - then use a tasteful default image of your choice related to your API. MUST use v-bind to display the image(s).
 
 ---
 
