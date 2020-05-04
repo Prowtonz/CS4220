@@ -173,6 +173,7 @@ Slack is an online collaboration hub that can replace email to help people work 
 <br/>
 
 **Week 15 - 05/03**
+ - Working with Vue.js components
  - Contunation on pairing Node.js with Vue.js
  - Contunation on discussion on the Final Project 
  

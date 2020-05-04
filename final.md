@@ -57,7 +57,7 @@ Your Node.js server is responsible utilizing your Custom Node Module to communic
 
 **app.js**
   - Vue.js application code.  Creates a new Vue instance and contains the logic for communicating with the Node.js server.
-  - Makes use of all the options demo-ed in class: el, data, computed and methods.
+  - Makes use of all the options demo-ed in class: `el`, `data`, `computed` and `methods`.
 
 **Guidelines**
   - Create an input field that the User will use to perform the search.
@@ -75,9 +75,11 @@ Your Node.js server is responsible utilizing your Custom Node Module to communic
 
 ### WHAT TO UPLOAD TO CSNS
 
-- ZIP File with 3 folders inside
+- ZIP File with 2 folders inside
   - FOLDER for the custom module which includes - ONLY index.js, package.json, config.json
-  - FOLDER for the Web Application which contains 2 sub folders for the FOLDER for Node.js server and FOLDER for the Vue.js application.
+  - FOLDER for the Web Application which contains 2 sub folders:
+    - FOLDER for Node.js server 
+    - FOLDER for the Vue.js application.
 - 2 Min Video Presentation (mp4 only)
 
 ---
