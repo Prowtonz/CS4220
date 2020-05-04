@@ -105,3 +105,14 @@ Your Node.js server is responsible utilizing your Custom Node Module to communic
   - There should be no use of setTimeout() or setInterval
 
 ---
+### Initial Search Page
+![Initial Search Page](https://github.com/cydneymikel/CS4220/blob/master/final-images/initial-page.png)
+
+### Search Results List
+![Results from Search](https://github.com/cydneymikel/CS4220/blob/master/final-images/result-list.png)
+
+### Fetch by ID that the User Selected
+![Fetch By Id of Selected Item](https://github.com/cydneymikel/CS4220/blob/master/final-images/fetch-by-id.png)
+
+### Extra Credit History Component
+![Extra Credit](https://github.com/cydneymikel/CS4220/blob/master/final-images/history-extra-credit.png)
