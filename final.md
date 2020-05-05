@@ -68,8 +68,24 @@ Your Node.js server is responsible utilizing your Custom Node Module to communic
   - Perform the necessary steps to fetch the detail by ID on the selected item.
     - The details should be formatted cleanly, so that it is easily readable.
     - DO NOT display JSON structures.
-    - The details should include an image.  
+    - The details should include an image.
     - IF your API does not have images returned in results - then use a tasteful default image of your choice related to your API. MUST use v-bind to display the image(s).
+
+---
+EXTRA CREDIT - 10pts
+Create a Vue.js component that will display a "History" of fetches.
+
+(5 pts)
+- Create a Vue component with a template and props options.
+- Update your Vue instance to use the component option and use the component created.
+- Update your HTML file to accept and use this component.
+- The component should only display the name of the selected result from the list and a timestamp.
+- The component should not display any IDs.
+
+(5 pts)
+- The title/name should be clickable and when clicked re-fetches by id this same result.
+- There should be no duplicates of titles/names in the "History".  If it is already in the history, do not add it.
+- The component should not display any IDs.
 
 ---
 
@@ -78,7 +94,7 @@ Your Node.js server is responsible utilizing your Custom Node Module to communic
 - ZIP File with 2 folders inside
   - FOLDER for the custom module which includes - ONLY index.js, package.json, config.json
   - FOLDER for the Web Application which contains 2 sub folders:
-    - FOLDER for Node.js server 
+    - FOLDER for Node.js server
     - FOLDER for the Vue.js application.
 - 2 Min Video Presentation (mp4 only)
 
