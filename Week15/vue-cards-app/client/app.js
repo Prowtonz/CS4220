@@ -1,0 +1,46 @@
+const cards = new Vue({
+    el: '#cards',
+    data: {
+        appName: 'Deck of Cards App',
+        shuffle: '',
+        numberOfCards: '',
+        deck: {},
+        isPlaying: false,
+        selectedCards: [],
+        gameTracker: [],
+    },
+    computed: {
+        remainingCards: function () {
+            if (this.deck && this.deck.cards) {
+                return this.deck.remaining;
+            } else {
+                return 0;
+            }
+        },
+    },
+    methods: {
+        playGame: async function () {
+            this.isPlaying = true;
+
+            const response = await axios.get(`http://localhost:8888/api/play`);
+            this.deck = response.data;
+        },
+        throwaway: async function () {
+            const response = await axios.post(`http://localhost:8888/api/throwaway`, {
+                deck: this.deck,
+                selectedCards: this.selectedCards,
+            });
+
+            this.deck = response.data;
+            this.isPlaying = false;
+        },
+        clear: function () {
+            this.trackGame();
+
+            this.deck = {};
+            this.numberOfCards = '';
+            this.shuffle = '';
+            this.selectedCards = [];
+        }
+    }
+});
