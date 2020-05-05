@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Deck of Cards Demo App</title>
+        <title>Cards App</title>
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
                     <div class="row">
                         <div class="col-lg">
                             <h1 class="display-2">{{ appName }}</h1>
-                            <p class="lead">deck of cards vue.js app</p>
+                            <p class="lead">demo deck of cards app</p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,11 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <!-- Vue Component for Timestamps -->
+                        <!-- Component for Past Decks with Timestamps -->
+                        <!-- The "tracker-component" name is the name assigned in the Vue instance under the components option -->
+                        <!-- The "v-bind:game-tracker" is the kebob casing for gameTracker (Vue.js binds require camelCase to be converted to kebob case) -->
+                        <!-- This binding is then set to equal the actual prop from the component which is gameTracker and here is allowed to be camelCase  -->
+                        <tracker-component v-bind:game-tracker="gameTracker"></tracker-component>
                     </div>
                 </div>
             </div>
