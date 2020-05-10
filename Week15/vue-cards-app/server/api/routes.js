@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/play', async (req, res) => {
-    const { shuffle, ncardNumber } = req.query;
+    const { shuffle, cardNumber } = req.query;
 
     try {
         const deck = await deckofcards.deck(shuffle);

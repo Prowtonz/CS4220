@@ -51,7 +51,7 @@ const cards = new Vue({
             // then the key is on the left of the "="
             // and the value is on the right of the "="
             // each argument MUST be seperated by a "&"
-            const query = `?shuffle=shuffle&cardNumber=n`
+            const query = `?shuffle=${shuffle}&cardNumber=${n}`
 
             // use that query string in our URL
             const response = await axios.get(`http://localhost:8888/api/play${query}`);
