@@ -43,7 +43,18 @@ const cards = new Vue({
         playGame: async function () {
             this.isPlaying = true;
 
-            const response = await axios.get(`http://localhost:8888/api/play`);
+            // query args to pass to server URL in routes.js
+            const shuffle = true;
+            const n = 5;
+
+            // create a query string which starts with a: ?
+            // then the key is on the left of the "="
+            // and the value is on the right of the "="
+            // each argument MUST be seperated by a "&"
+            const query = `?shuffle=shuffle&cardNumber=n`
+
+            // use that query string in our URL
+            const response = await axios.get(`http://localhost:8888/api/play${query}`);
             this.deck = response.data;
         },
         throwaway: async function () {

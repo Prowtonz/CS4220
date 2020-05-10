@@ -3,12 +3,11 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/play', async (req, res) => {
-    const shuffle = true;
-    const n = 5;
+    const { shuffle, ncardNumber } = req.query;
 
     try {
         const deck = await deckofcards.deck(shuffle);
-        const drawn = await deckofcards.draw(deck.deck_id, n);
+        const drawn = await deckofcards.draw(deck.deck_id, cardNumber);
 
         res.json(drawn);
     } catch (error) {
